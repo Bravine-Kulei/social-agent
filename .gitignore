@@ -1,0 +1,329 @@
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Storage and temp files
+storage/
+temp/
+downloads/
+media/
+uploads/
+
+# Video and image files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
+*.webp
+
+# Audio files
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Logs
+*.log
+logs/
+log/
+agent_system.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Windows
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# API keys and secrets (additional safety)
+secrets.json
+credentials.json
+api_keys.txt
+tokens.txt
+
+# Social media content cache
+instagram_cache/
+twitter_cache/
+linkedin_cache/
+
+# AI model files (if downloaded locally)
+models/
+*.bin
+*.safetensors
+*.onnx
+
+# Configuration overrides
+config_local.py
+settings_local.py
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Monitoring and metrics
+metrics/
+monitoring/
+prometheus/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.local
+*.yml.local
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Node.js (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package files
+*.deb
+*.rpm
+*.msi
+*.dmg
+*.pkg
+
+# Compiled binaries
+*.exe
+*.dll
+*.dylib
+
+# Development tools
+.pre-commit-config.yaml.local
+.flake8.local
+.pylintrc.local
+
+# Profiling
+*.prof
+*.pstats
+
+# Memory dumps
+*.dump
+*.dmp
+
+# Core dumps
+core.*
+
+# Crash logs
+crash.log
+error.log
+
+# Performance logs
+perf.data*
+
+# Local development
+local_settings.py
+development.py
+dev_config.py
+
+# Testing
+.coverage.*
+test_results/
+test_reports/
+
+# Deployment
+deploy/
+deployment/
+k8s/
+helm/
+
+# Monitoring
+grafana/
+kibana/
+
+# Cache directories
+.cache/
+cache/
+__pycache__/
+
+# Temporary Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.virtualenv
+virtualenv/
+
+# Poetry
+poetry.lock
+
+# Conda
+.conda/
+conda-meta/
+
+# Jupyter
+.jupyter/
+
+# FastAPI
+.fastapi/
+
+# Streamlit
+.streamlit/
+
+# Celery
+celerybeat-schedule.db
+
+# Redis
+dump.rdb
+
+# SQLite WAL files
+*.db-wal
+*.db-shm
