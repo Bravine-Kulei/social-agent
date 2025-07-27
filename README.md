@@ -43,8 +43,8 @@ An AI-powered agentic system that automatically extracts Instagram videos from s
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd agent-shit
+git clone https://github.com/Bravine-Kulei/social-agent.git
+cd social-agent
 
 # Install dependencies
 pip install -r requirements.txt
@@ -117,13 +117,13 @@ from agents.orchestrator_agent import OrchestratorAgent
 
 async def main():
     orchestrator = OrchestratorAgent()
-    
+
     results = await orchestrator.execute_full_workflow(
         target_users=['username1', 'username2'],
         platforms=['twitter', 'linkedin'],
         schedule_posts=False
     )
-    
+
     print(f"Processed {results['summary']['total_videos_extracted']} videos")
 
 asyncio.run(main())
@@ -189,7 +189,7 @@ The system automatically optimizes content for each platform:
 ## 📁 Project Structure
 
 ```
-agent-shit/
+social-agent/
 ├── agents/                 # Agent modules
 │   ├── instagram_agent.py
 │   ├── content_transformer_agent.py
@@ -225,7 +225,7 @@ agent-shit/
 The system includes built-in rate limiting for all APIs:
 
 - **Twitter**: 300 requests per hour
-- **LinkedIn**: 100 requests per hour  
+- **LinkedIn**: 100 requests per hour
 - **Instagram**: 200 requests per hour
 
 Rate limits are automatically managed with exponential backoff.
