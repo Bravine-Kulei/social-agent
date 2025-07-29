@@ -178,25 +178,15 @@ class TwitterPublisher:
         # Extract main content (first sentence or first 120 chars)
         sentences = caption.split('.')
         main_content = sentences[0] if sentences else caption
-        
+
         # Limit words to fit Twitter
-        words = main_content.split()[:30]
+        words = main_content.split()[:35]  # Increased word limit since we're not adding likes/hashtags
         content = " ".join(words)
-        
-        # Add engagement boost if high engagement
-        if likes > 2000:
-            content += f" 🔥 ({likes:,} likes!)"
-        elif likes > 1000:
-            content += f" 🚀 ({likes:,} likes!)"
-        
-        # Add 1-2 relevant hashtags
-        relevant_hashtags = hashtags[:2] if hashtags else ['#AI', '#Innovation']
-        content += " " + " ".join(relevant_hashtags)
-        
+
         # Ensure Twitter length
         if len(content) > 250:  # Leave room for attribution
             content = content[:247] + "..."
-        
+
         return content
     
     async def post_video_content(self, video_data: Dict) -> Dict:
@@ -212,8 +202,8 @@ class TwitterPublisher:
                 video_data['hashtags']
             )
             
-            # Add source attribution
-            optimized_content += f"\n\n📸 From @{video_data['owner_username']}: {video_data['shortcode']}"
+            # Add @idxcodehub tag and source attribution
+            optimized_content += f"\n\n@idxcodehub 📸 {video_data['shortcode']}"
             
             # Final length check
             if len(optimized_content) > 280:
