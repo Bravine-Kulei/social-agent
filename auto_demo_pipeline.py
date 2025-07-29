@@ -142,10 +142,12 @@ class TwitterPoster:
         try:
             logger.info("🐦 Posting to Twitter...")
             
-            # Add source attribution
+            # Add @idxcodehub tag and source attribution
             if source_info:
                 shortcode = source_info.get('shortcode', 'unknown')
-                content += f"\n\n📸 From IG: {shortcode}"
+                content += f"\n\n@idxcodehub 📸 {shortcode}"
+            else:
+                content += f"\n\n@idxcodehub"
             
             # Final length check
             if len(content) > 280:

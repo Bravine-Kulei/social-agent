@@ -31,12 +31,12 @@ async def test_clean_format():
         sample_video['hashtags']
     )
     
-    # Add attribution
-    final_content = optimized_content + f"\n\n📸 {sample_video['shortcode']}"
+    # Add @idxcodehub tag and attribution
+    final_content = optimized_content + f"\n\n@idxcodehub 📸 {sample_video['shortcode']}"
     
     print("📝 BEFORE (Old Format):")
     print("Every software engineer should be able to talk effectively about prompting, vibe coding, MCP servers, retrieval augmented generation, and supervise fine-tuning 🔥 (2,527 likes!) #AI #Innovation")
-    print("\n📸 From @edhonour: DMlkZQuyQzi")
+    print("\n📸 DMlkZQuyQzi")
     
     print("\n" + "="*50)
     
@@ -48,6 +48,7 @@ async def test_clean_format():
     print("✅ Removed likes count (2,527 likes!)")
     print("✅ Removed hashtags (#AI #Innovation)")
     print("✅ Removed 'From @username:' tag")
+    print("✅ Added @idxcodehub tag")
     print("✅ Kept only shortcode for attribution")
     print("✅ More space for actual content")
     
