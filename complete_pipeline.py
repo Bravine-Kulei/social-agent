@@ -112,25 +112,15 @@ Twitter Post:"""
         # Extract main content (first sentence or first 100 chars)
         sentences = caption.split('.')
         main_content = sentences[0] if sentences else caption
-        
-        # Limit words
-        words = main_content.split()[:25]
+
+        # Limit words (increased since we're not adding likes/hashtags)
+        words = main_content.split()[:35]
         transformed = " ".join(words)
-        
-        # Add engagement boost if high engagement
-        if likes > 1000:
-            transformed += f" 🔥 ({likes:,} likes!)"
-        elif likes > 500:
-            transformed += " 🚀"
-        
-        # Add 1-2 hashtags
-        relevant_hashtags = hashtags[:2] if hashtags else ['#AI', '#Innovation']
-        transformed += " " + " ".join(relevant_hashtags)
-        
+
         # Ensure Twitter length
-        if len(transformed) > 280:
-            transformed = transformed[:277] + "..."
-        
+        if len(transformed) > 250:  # Leave room for attribution
+            transformed = transformed[:247] + "..."
+
         return transformed
     
     def _fallback_transform(self, post: Dict) -> str:
@@ -175,10 +165,12 @@ class TwitterPublisher:
         try:
             logger.info("🐦 Publishing to Twitter...")
             
-            # Add source attribution
+            # Add @idxcodehub tag and source attribution
             if source_post:
                 shortcode = source_post.get('shortcode', 'unknown')
-                content += f"\n\n📸 From IG: {shortcode}"
+                content += f"\n\n@idxcodehub 📸 {shortcode}"
+            else:
+                content += f"\n\n@idxcodehub"
             
             # Final length check
             if len(content) > 280:
