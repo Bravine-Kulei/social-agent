@@ -1,8 +1,8 @@
-# Instagram-to-Social Media Agent System 🤖
+# Instagram-to-Social Media Agent System 
 
 An AI-powered agentic system that automatically extracts Instagram videos from specific users and transforms them into optimized content for Twitter and LinkedIn.
 
-## 🌟 Features
+##  Features
 
 - **Multi-Agent Architecture**: Uses CrewAI for coordinated agent workflows
 - **Instagram Content Extraction**: Automatically scrapes videos from target users
@@ -14,7 +14,7 @@ An AI-powered agentic system that automatically extracts Instagram videos from s
 - **Rate Limiting**: Respects API limits and handles rate limiting gracefully
 - **Engagement Monitoring**: Tracks performance metrics across platforms
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -37,7 +37,7 @@ An AI-powered agentic system that automatically extracts Instagram videos from s
 4. **Twitter Agent**: Handles Twitter posting and engagement
 5. **LinkedIn Agent**: Manages LinkedIn content publishing
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Installation
 
@@ -129,7 +129,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## 📋 API Reference
+##  API Reference
 
 ### REST API Endpoints
 
@@ -186,7 +186,7 @@ The system automatically optimizes content for each platform:
 - Video max 10 minutes
 - Professional tone
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 social-agent/
@@ -212,7 +212,7 @@ social-agent/
 └── requirements.txt    # Dependencies
 ```
 
-## 🔒 Security & Privacy
+##  Security & Privacy
 
 - API keys are stored securely in environment variables
 - Instagram scraping respects rate limits and ToS
@@ -220,7 +220,7 @@ social-agent/
 - Temporary files are cleaned up automatically
 - Webhook signatures are verified for security
 
-## 🚨 Rate Limiting
+##  Rate Limiting
 
 The system includes built-in rate limiting for all APIs:
 
@@ -230,7 +230,7 @@ The system includes built-in rate limiting for all APIs:
 
 Rate limits are automatically managed with exponential backoff.
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Run tests
@@ -240,7 +240,7 @@ pytest
 pytest --cov=agents --cov=services --cov=utils
 ```
 
-## 📈 Monitoring
+##  Monitoring
 
 The system includes comprehensive logging and monitoring:
 
@@ -250,7 +250,7 @@ The system includes comprehensive logging and monitoring:
 - Error tracking and reporting
 - Performance monitoring
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -258,11 +258,11 @@ The system includes comprehensive logging and monitoring:
 4. Add tests
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This tool is for educational and legitimate business purposes only. Users are responsible for:
 
@@ -271,7 +271,7 @@ This tool is for educational and legitimate business purposes only. Users are re
 - Following platform-specific guidelines
 - Obtaining necessary permissions for content use
 
-## 🆘 Support
+##  Support
 
 For support and questions:
 
@@ -280,7 +280,7 @@ For support and questions:
 3. Create a new issue with detailed information
 4. Join our community discussions
 
-## 🔮 Roadmap
+##  Roadmap
 
 - [ ] Support for additional platforms (TikTok, YouTube)
 - [ ] Advanced content filtering and moderation
